@@ -1,0 +1,28 @@
+[
+    {
+    "nome":"Cintia",
+    "sobrenome":"Ramon",
+    "empresa":"Emgepron",
+    "endereco":"AV.Brasil",
+    "numero": "44478",
+    "pais":"Brasil",
+    "cidade":"Rio de Janeiro",
+    "estado":"Rio de Janeiro",
+    "cep":"23045060",
+    "telefone":"2123949105",
+    "email":"cintia@amor.com.br"
+},
+{
+    "nome":"Lia",
+    "sobrenome":"Nepomuceno",
+    "empresa":"Cataia Express",
+    "endereco":"AV.Paulista",
+    "numero": "171",
+    "pais":"Brasil",
+    "cidade":"Rio de Janeiro",
+    "estado":"Rio de Janeiro",
+    "cep":"23045060",
+    "telefone":"2123949105",
+    "email":"liaamor@amor.com.br"
+}
+]

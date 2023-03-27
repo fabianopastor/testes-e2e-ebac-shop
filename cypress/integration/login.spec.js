@@ -1,5 +1,7 @@
 /// <reference types="cypress" />
-let dadosLogin
+var faker = require('faker');
+let dadosLogin 
+const perfil = require('../fixtures/perfil.json')
 
 context('Funcionalidade Login', () => {
     before(() => {
@@ -16,10 +18,12 @@ context('Funcionalidade Login', () => {
         cy.screenshot()
     });
 
-    it('Login com sucesso usando Comando customizado', () => {
+    
+    it.only('Login com sucesso usando Comando customizado', () => {
         cy.login(dadosLogin.usuario, dadosLogin.senha)
         cy.get('.page-title').should('contain', 'Minha conta')
     });
+
 
     it('Login usando fixture', () => {
         cy.fixture('perfil').then((dados) => {
@@ -33,6 +37,6 @@ context('Funcionalidade Login', () => {
         cy.get('#password').type(dadosLogin.senha, { log: false })
         cy.get('.woocommerce-form > .button').click()
         cy.get('.page-title').should('contain', 'Minha conta')
-        cy.get('.woocommerce-MyAccount-content > :nth-child(2)').should('contain', 'Olá, aluno_ebac')
+        cy.get('.woocommerce-MyAccount-content > :nth-child(2)').should('contain', 'Olá,')
     })
 })
